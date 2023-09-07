@@ -5,35 +5,61 @@
 }
 
 img {
-    flex-grow: 1;
+    /* flex-grow: 1;
     padding: 4px;
-    aspect-ratio: 5 / 2;
+    aspect-ratio: 5 / 2; */
 }
 
-.main-page{
+.main-page {
     background-color: #000000;
-    min-height: 90vh;
 }
 
 .main-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 45px;
+    padding: 0px 80px;
+    align-items: start;
+    justify-content: center;
+}
 
+.container-photo {
+    position: relative;
+    padding: 5px;
+}
+
+.muted {
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    background-color: #626D79;
+    font-size: 15px;
+    padding: 1px;
 }
 
 .toolbar {
     background-color: #222222;
-    min-height: 10vh;
+    height: 10vh;
 }
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* toolbar */
 
 /* debug */
 
-.debug .container {
+.debug .container,.debug .toolbar {
     border: 2px dashed white;
     padding: 20px;
 }
 
 .debug main [class^='col-'] {
     border: 2px dashed white;
+}
+
+.debug .toolbar-item{
+    border: 2px dashed green;
+    padding: 20px;
 }
