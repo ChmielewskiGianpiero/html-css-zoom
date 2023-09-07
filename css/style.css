@@ -4,15 +4,36 @@
     box-sizing: border-box;
 }
 
-/* debug */
+img {
+    flex-grow: 1;
+    padding: 4px;
+    aspect-ratio: 5 / 2;
+}
 
-.debug .main-page{
+.main-page{
     background-color: #000000;
     min-height: 90vh;
 }
 
-.debug .toolbar {
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 45px;
+
+}
+
+.toolbar {
     background-color: #222222;
     min-height: 10vh;
+}
 
+/* debug */
+
+.debug .container {
+    border: 2px dashed white;
+    padding: 20px;
+}
+
+.debug main [class^='col-'] {
+    border: 2px dashed white;
 }
