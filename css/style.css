@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 
+ul, li, menu{
+    list-style: none;
+}
+
 img {
     /* flex-grow: 1;
     padding: 4px;
     aspect-ratio: 5 / 2; */
+    width: 100%;
 }
 
 .main-page {
@@ -17,7 +22,7 @@ img {
 .main-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 80px;
+    padding: 95px 80px;
     align-items: start;
     justify-content: center;
 }
@@ -39,6 +44,7 @@ img {
 .toolbar {
     background-color: #222222;
     height: 10vh;
+    padding: 12px;
 }
 
 .row{
@@ -47,6 +53,55 @@ img {
 }
 
 /* toolbar */
+.toolbar .info-icon {
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.toolbar i{
+    font-size: 30px;
+}
+
+.toolbar {
+    height: 10vh;
+    padding: 12px;
+    background-color: #222222;
+    color: white;
+
+}
+
+.icon{
+    position: relative;
+    left: -7px;
+}
+
+
+.select{
+    position: relative;
+    left: 13px;
+    bottom: 8px;
+}
+
+.col {
+    text-align: center;
+}
+
+.col-9{
+    flex-basis: calc((100% / 12) * 7);
+    display: inline-block;
+}
+
+.camera{
+    position: relative;
+    right: 151px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
 
 /* debug */
 
@@ -59,7 +114,7 @@ img {
     border: 2px dashed white;
 }
 
-.debug .toolbar-item{
+.debugg section [class^='col-']{
     border: 2px dashed green;
     padding: 20px;
 }
