@@ -122,6 +122,11 @@ main.{
     color: green;
 }
 
+.bg-light-grey{
+    background-color: #4A4A4A;
+    padding: 10px;
+}
+
 /* debug */
 
 .debug .container,.debug .toolbar {
@@ -133,7 +138,7 @@ main.{
     border: 2px dashed white;
 }
 
-.debugg section [class^='col-']{
+.debug section [class^='col-']{
     border: 2px dashed green;
     padding: 20px;
 }
