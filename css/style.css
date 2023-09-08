@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 ul, li, menu{
@@ -27,6 +29,15 @@ img {
     justify-content: center;
 }
 
+body{
+    height: 100vh;
+
+}
+
+main.{
+    flex-grow: 1;
+}
+
 .container-photo {
     position: relative;
     padding: 5px;
@@ -43,8 +54,6 @@ img {
 
 .toolbar {
     background-color: #222222;
-    height: 10vh;
-    padding: 12px;
 }
 
 .row{
@@ -53,13 +62,10 @@ img {
 }
 
 /* toolbar */
-.toolbar .info-icon {
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
 .toolbar i{
     font-size: 30px;
+    text-align: center;
 }
 
 .toolbar {
@@ -67,7 +73,6 @@ img {
     padding: 12px;
     background-color: #222222;
     color: white;
-
 }
 
 .icon{
@@ -80,6 +85,12 @@ img {
     position: relative;
     left: 13px;
     bottom: 8px;
+}
+
+.select-share{
+    position: relative;
+    left: -5px;
+    bottom: -13px;
 }
 
 .col {
@@ -98,10 +109,18 @@ img {
 
 .menu{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+
 }
 
+.toolbar li{
+    padding: 0px 10px;
+    text-align: center;
+}
 
+.bg-green{
+    color: green;
+}
 
 /* debug */
 
